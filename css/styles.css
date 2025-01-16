@@ -1,1 +1,56 @@
 /* Ini File CSS */
+
+/* Pengaturan posisi navbar */
+.main-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Pengaturan posisi logo */
+.logo-icon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/600);
+    background-size: cover;
+}
+
+/* Pengaturan desain border di menu navbar */
+nav {
+    display: flex;
+}
+
+/* Pengaturan sudut di border menu navigasi */
+.right-rounded {
+    border-radius: 0 8px 8px 0;
+}
+.left-rounded {
+    border-radius: 8px 0 0 8px;
+}
+
+/* Pengaturan layout menu navigasi */
+nav > a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Pengaturan posisi banner di Hero HOME */
+.banner-image {
+    height: 450px;
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Pengaturan isi konten untuk di Hero OUR PROFILE, PORTOFOLIO, dan MESSAGE US  */
+.content {
+    height: 500px; /* membatasi banyaknya isi konten, jika ingin fleksibel, tidak perlu diberikan sintak "height" */
+}
+
+/* Pengaturan posisi FOOTER */
+footer {
+    text-align: center;
+}

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Bagian menghubungkan pengaturan CSS ke HTML -->
+ <link rel="stylesheet" href="css/styles.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +11,78 @@
 </head>
 
 <body>
-    <!-- <h1>hello wordl</h1> -->
+    <!-- Logo & Navigation -->
+    <header class="main-header">
+        <!-- Bagian untuk logo -->
+        <div class="logo-icon"></div>
+
+        <!-- Bagian untuk navigasi -->
+         <nav>
+            <a href="#home-page" class="left-rounded">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#message-us" class="right-rounded">Message Us</a>
+         </nav>
+    </header>
+
+    <!-- Menampilkan garis pada bagian header -->
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero section HOME -->
+        <section>
+            <header id="home-page">
+                <h1> <span id="welcome-speech">Hello User</span>, Welcome to Our Website</h1>
+                <p>Website ini merupakan...</p>
+            </header>
+
+            <!-- Bagian penempatan banner -->
+            <div class="banner-image"></div>
+        </section>
+
+        <!-- Hero section OUR PROFILE -->
+        <section>
+            <!-- Header untuk tittle navbar -->
+            <header id="our-profile">
+                <h1>Our Profile</h1>
+            </header>
+
+            <!-- Bagian penempatan isi content -->
+            <div class="content"></div>
+        </section>
+
+        <!-- Hero section PORTOFOLIO -->
+        <section>
+            <!-- Header untuk tittle navbar -->
+            <header id="portofolio">
+                <h1>Portofolio</h1>
+            </header>
+
+            <!-- Bagian penempatan isi content -->
+            <div class="content"></div> 
+        </section>
+
+        <!-- Hero section MESSAGE US -->
+        <section>
+            <!-- Header untuk tittle navbar -->
+            <header id="message-us">
+                <h1>Message Us</h1>
+            </header>
+
+            <!-- Bagian penempatan isi content -->
+            <div class="content"></div>
+        </section>
+
+    </main>
+
+    <!-- Menampilkan garis yang membatasi main content dengan bagian footer -->
+     <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Project Mini Corse SE RevoU</p>
+    </footer>
 </body>
 
 </html>
