@@ -33,8 +33,11 @@
         <!-- Hero section HOME -->
         <section>
             <header id="home-page">
-                <h1> <span id="welcome-speech">Hello User</span>, Welcome to Our Website</h1>
+                <h1> Hello! <span id="welcome">...</span>, Welcome to Our Website</h1>
                 <p>Website ini merupakan...</p>
+                
+                <!-- Coba sesi Javascript -->
+                <button id="tombol">Ganti Nama</button>               
             </header>
 
             <!-- Bagian penempatan banner -->
@@ -67,11 +70,43 @@
         <section>
             <!-- Header untuk tittle navbar -->
             <header id="message-us">
-                <h1>Message Us</h1>
+                <h1>Message Us</h1>                      
             </header>
-
+         
             <!-- Bagian penempatan isi content -->
-            <div class="content"></div>
+            <!-- <div class="content"></div> -->
+
+            <!-- Bagian form input -->
+            <form name="message-form" onsubmit="return validateForm()">
+                Nama:
+                <input placeholder="Nama" type="text" name="full-name" required />
+                <br />
+
+                Tanggal Lahir:
+                <input type="date" name="birth-date" required />
+                <br />
+
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="Laki-laki" required />
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan" required />
+                <label for="female">Perempuan</label>
+                <br />
+
+                Pesan:
+                <textarea placeholder="Pesan" name="messages" required></textarea>
+                <br />
+
+                <input type="submit" value="Submit" id="submit" />
+             </form>
+
+            <!-- Bagian menampilkan form input yang sudah di isi -->
+            <div>
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
         </section>
 
     </main>
@@ -83,6 +118,8 @@
     <footer>
         <p>&copy; 2025 - Project Mini Corse SE RevoU</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
